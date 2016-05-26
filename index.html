@@ -7,14 +7,18 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
+<!-- CSS -->
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto Condensed", sans-serif}
+html,body {height:100%}
+.w3-main {min-height:100%; height: auto !important; height:100%; margin: 0 auto -166px} 
 .w3-hover-red:hover {color:#fff !important; background-color:#cf2424 !important}
 .w3-red {background-color:#cf2424 !important}
 .w3-red:hover {color:#777 !important}
 .w3-sidenav a,.w3-sidenav h4{padding:12px;}
 .w3-navbar a{padding-top:12px !important;padding-bottom:12px !important;}
 .w3-navbar li a:hover{color:#fff !important}
+@media screen and (max-width:992px){.w3-main{margin-left:20px !important; margin-right:20px !important}}
 </style>
 
 <body>
@@ -27,8 +31,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto Condensed", sans-serif}
   <li class="w3-hide-small"><a href="http://cory-gray.github.io/projects" class="w3-hover-red">Projects</a></li>
 </ul>
 
-<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
-<div class="w3-main" style="margin-left:250px; margin-right:250px">
+<!-- Main content -->
+<div class="w3-main" style="margin-left:15%; margin-right:15%">
 
   <div class="w3-row w3-padding-64">
     <h1 style="color:#cf2424" align="center">Welcome</h1>
@@ -36,64 +40,35 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto Condensed", sans-serif}
 
   <div class="w3-row w3-padding-16">
     <h3 style="color:#cf2424">Epsilon Eridani</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
   </div>
 
   <div class="w3-row w3-padding-16">
       <h3 style="color:#cf2424">Tau Ceti</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
   </div>
 
   <div class="w3-row w3-padding-16">
       <h3 style="color:#cf2424">Kepler</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
   </div>
-  
+
+  <div class="push" style="height:166px"></div>
 </div>
+
 <!-- Footer -->
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
+  <footer id="myFooter" style="height:166px">
+    <div class="w3-container w3-theme-l1 w3-padding-32">
       <h4>Footer</h4>
     </div>
 
-    <div class="w3-container w3-theme-l1">
+    <div class="w3-container w3-theme">
       <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </div>
   </footer>
 
 <!-- END MAIN -->
 </div>
-
-<script>
-// Script to open and close the sidenav
-function w3_open() {
-    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
-    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
-    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
-}
-</script>
-
-</body>
-</html>
-<script>
-// Script to open and close the sidenav
-function w3_open() {
-    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
-    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
-    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
-}
-</script>
 
 </body>
 </html>
