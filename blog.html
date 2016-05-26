@@ -7,41 +7,62 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
+<!-- CSS -->
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto Condensed", sans-serif}
+html,body {height:100%}
+.w3-main {min-height:100%; height: auto !important; height:100%; margin: 0 auto -166px} 
 .w3-hover-red:hover {color:#fff !important; background-color:#cf2424 !important}
+.w3-red {background-color:#cf2424 !important}
+.w3-red:hover {color:#777 !important}
 .w3-sidenav a,.w3-sidenav h4{padding:12px;}
 .w3-navbar a{padding-top:12px !important;padding-bottom:12px !important;}
+.w3-navbar li a:hover{color:#fff !important}
+@media screen and (max-width:992px){.w3-main{margin-left:20px !important; margin-right:20px !important}}
 </style>
 
 <body>
 <!-- Navbar -->
-<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
-  <li class="w3-hide-small"><a href="http://cory-gray.github.io/" class="w3-hover-red">Home</a></li>
-  <li class="w3-hide-small"><a href="http://cory-gray.github.io/about" class="w3-hover-red">About</a></li>
-  <li class="w3-hide-small"><a href="http://cory-gray.github.io/blog" class="w3-hover-red">Blog</a></li>
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4">
+  <li class="w3-hide-small"><a href="http://cory-gray.github.io/index" class="w3-hover-red">Home</a></li>
+  <li class="w3-hide-small"><a href="http://cory-gray.github.io/blog" class="w3-hover-red">About</a></li>
+  <li class="w3-hide-small w3-red"><a class="w3-hover-none">Blog</a></li>
   <li class="w3-hide-small"><a href="http://cory-gray.github.io/resume" class="w3-hover-red">Resume</a></li>
   <li class="w3-hide-small"><a href="http://cory-gray.github.io/projects" class="w3-hover-red">Projects</a></li>
 </ul>
 
-<!-- Overlay effect when opening sidenav on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
-
-<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
-<div class="w3-main" style="margin-left:250px">
+<!-- Main content -->
+<div class="w3-main" style="margin-left:15%; margin-right:15%">
 
   <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 style="color:#cf2424">Blog</h1>
-      <p>
-      Post 3 <br>
-      Post 2 <br>
-      Post 1
-      </p>
-    </div>
+    <h1 style="color:#cf2424" align="center">Blog</h1>
   </div>
 
-    <div class="w3-container w3-theme-l1">
+  <div class="w3-row w3-padding-16">
+    <h3 style="color:#cf2424">Post 3</h3>
+      <p>Even more cool stuff.</p>
+  </div>
+  
+  <div class="w3-row w3-padding-16">
+    <h3 style="color:#cf2424">Post 2</h3>
+      <p>More cool stuff.</p>
+  </div>
+  
+  <div class="w3-row w3-padding-16">
+    <h3 style="color:#cf2424">Post 1</h3>
+      <p>Cool stuff</p>
+  </div>
+
+  <div class="push" style="height:166px"></div>
+</div>
+
+<!-- Footer -->
+  <footer id="myFooter" style="height:166px">
+    <div class="w3-container w3-theme-l1 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme">
       <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </div>
   </footer>
